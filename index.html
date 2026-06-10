@@ -193,6 +193,28 @@
             background: #fff;
         }
 
+        .thumb-link {
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid #ececec;
+        }
+
+        .project-thumb {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            object-position: top center;
+            background: #f0f0f0;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover .project-thumb {
+            transform: scale(1.03);
+        }
+
         .project-card h3 {
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
@@ -447,6 +469,7 @@
         <h2 class="section-title">Featured Projects</h2>
 
         <div class="project-card">
+            <a class="thumb-link" href="https://laslo-building.vercel.app" target="_blank" rel="noopener"><img class="project-thumb" src="previews/laslo.png" alt="Laslo Building website preview" loading="lazy"></a>
             <h3>Laslo Building — Construction Company</h3>
             <div class="tech">React • Vite • SEO</div>
             <p>Professional website for a construction company in Latvia: project portfolio with filters and a lightbox gallery, on-site video, animated statistics, contact form and legal pages (Privacy / Terms / Cookies).</p>
@@ -454,6 +477,15 @@
         </div>
 
         <div class="project-card">
+            <a class="thumb-link" href="https://baldystore.vercel.app" target="_blank" rel="noopener"><img class="project-thumb" src="previews/baldystore.png" alt="BaldyStore website preview" loading="lazy"></a>
+            <h3>BaldyStore — Streetwear Shop</h3>
+            <div class="tech">React • Vite • Supabase</div>
+            <p>Premium dark-themed streetwear store — clothing, sneakers and accessories. Catalog with filters and sorting, product modal with image gallery, cart with full checkout (delivery & payment options), favourites and live support chat.</p>
+            <a href="https://baldystore.vercel.app" target="_blank" rel="noopener" class="project-link">Visit Site</a>
+        </div>
+
+        <div class="project-card">
+            <a class="thumb-link" href="https://generatory-tyachiv.vercel.app" target="_blank" rel="noopener"><img class="project-thumb" src="previews/generatory.png" alt="Generatory Tyachiv store preview" loading="lazy"></a>
             <h3>Generatory Tyachiv — Online Store</h3>
             <div class="tech">React • Vite • Supabase</div>
             <p>Industrial-style e-commerce for generators and power equipment: catalog with live filters and search, shopping cart, product comparison and quick-view. Products are served from a Supabase database.</p>
@@ -461,6 +493,7 @@
         </div>
 
         <div class="project-card">
+            <a class="thumb-link" href="https://generatory-admin.vercel.app" target="_blank" rel="noopener"><img class="project-thumb" src="previews/generatory-admin.png" alt="Generatory Tyachiv admin panel preview" loading="lazy"></a>
             <h3>Generatory Tyachiv — Admin Panel</h3>
             <div class="tech">React • Supabase Auth • Storage</div>
             <p>Catalog management dashboard: email/password authentication, full CRUD for products, image uploads to cloud storage, order overview, validation and toast notifications.</p>
@@ -468,6 +501,7 @@
         </div>
 
         <div class="project-card">
+            <a class="thumb-link" href="https://amore-boutique.vercel.app" target="_blank" rel="noopener"><img class="project-thumb" src="previews/amore.png" alt="Amore Boutique website preview" loading="lazy"></a>
             <h3>Amore Boutique — Online Courses</h3>
             <div class="tech">React • Vite • Telegram</div>
             <p>Premium landing page for online China-sourcing courses: course catalog, detailed modals, a discounted bundle and smooth animated UI. Sales flow runs through Telegram.</p>
